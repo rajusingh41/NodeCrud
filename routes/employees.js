@@ -13,6 +13,10 @@ router.get('/', employee.list);
 
 router.get('/show/:id', employee.show);
 
+
+// Create employee
+router.get('/create', employee.create);
+
 // Save Employee
 
 router.post('/save', employee.save);

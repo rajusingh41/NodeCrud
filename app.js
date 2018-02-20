@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.use('/employess',employees);
 
-// https://www.djamware.com/post/58b27ce080aca72c54645983/how-to-create-nodejs-expressjs-and-mongodb-crud-web-application
+
 app.listen(3000);
 
 console.log('Open http://localhost:3000');

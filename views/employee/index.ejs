@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee List</title>
+</head>
+<body>
+    <div class="container">
+        <h3><a href="/employees/create">Create Employee</a></h3>
+
+        <h1>Employee List</h1>
+        <% if(employees.length>0){ %>
+<table>
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(var i =0;i<employees.length;i++){%>
+            <tr>
+                <td>
+                    <a href="/employees/show/<%= employees[i]._id%>"><%= employees[i].name%></a>
+                </td>
+                <td>
+                    <%= employees[i].department %>
+                </td>
+            </tr>
+
+      <%  } %>
+    </tbody>
+</table>
+      <%  } esle { %>
+<div> No Employee Found</div>
+    <%  } %>
+    </div>
+</body>
+</html>
