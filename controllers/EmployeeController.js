@@ -1,5 +1,3 @@
-import { compile } from './C:/Users/raju.singh.UTL/AppData/Local/Microsoft/TypeScript/2.6/node_modules/@types/ejs';
-
 var mongoose = require('mongoose');
 
 var Employee = mongoose.model('Employee');
